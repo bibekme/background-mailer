@@ -18,6 +18,7 @@ export default function Builder() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
   const onSubmit = async (data) => {
@@ -28,6 +29,7 @@ export default function Builder() {
       duration: 3000,
       isClosable: true,
     });
+    reset();
   };
 
   return (
