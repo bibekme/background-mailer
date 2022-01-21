@@ -26,7 +26,7 @@ export default function Builder() {
     toast({
       title: responseData.message,
       status: "success",
-      duration: 3000,
+      duration: 2000,
       isClosable: true,
     });
     reset();
